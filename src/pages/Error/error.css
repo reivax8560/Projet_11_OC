@@ -1,0 +1,9 @@
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-msg {
+  margin: 100px auto;
+  font-size: 30px;
+}/*# sourceMappingURL=error.css.map */

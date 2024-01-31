@@ -1,0 +1,22 @@
+.error-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.error-code {
+    margin: 40px auto;
+    font-size: 150px;
+    color: #FF6060;
+}
+
+.error-msg {
+    margin: 40px auto;
+    font-size: 30px;
+    color: #FF6060;
+}
+
+.error-link {
+    margin: 40px auto;
+    font-size: 15px;
+    color: #FF6060;
+}
