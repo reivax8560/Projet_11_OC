@@ -1,0 +1,17 @@
+p {
+    margin: 0;
+}
+
+.about {
+    font-family: Montserrat;
+    font-size: 26px;
+}
+
+.about-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    // gap: 50px;
+    padding: 45px;
+    align-items: center;
+}

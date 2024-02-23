@@ -1,16 +1,20 @@
 .card {
-    width: 30%;
-    margin-bottom: 30px;
+    height: 100%;
 
     &__link {
         position: relative;
         text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 
     &__img {
         width: 100%;
-        height: 100%; // définir règle pour ne pas étirer les images
+        object-fit: cover;
         border-radius: 10px;
+        height: 100%;
+        // max-height: 250px;
     }
 
     &__txt {

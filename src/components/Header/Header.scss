@@ -4,11 +4,12 @@
     height: 68px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 
     &__logo {
         width: 210px;
         height: 100%;
-        flex-shrink: 0;
+        // flex-shrink: 0;
     }
 
     &__navbar {
