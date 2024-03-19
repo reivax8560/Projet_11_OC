@@ -9,7 +9,6 @@
     &__logo {
         width: 210px;
         height: 100%;
-        // flex-shrink: 0;
     }
 
     &__navbar {
@@ -26,5 +25,11 @@
         font-weight: 500;
         text-wrap: nowrap;
         margin-left: 50px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    nav a.active {
+        text-decoration: underline;
     }
 }

@@ -1,15 +1,17 @@
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './RentalCard.scss'
 
 function RentalCard({ id, cover, title }) {
+
+    const navigate = useNavigate()
+
     return (
-        <li className="card">
-            <Link to={'location/' + id} className="card__link">
+        <div className="card">
+            <div className="card__link" onClick={() => navigate('location/' + id)}>
                 <img src={cover} alt={title} className='card__img' />
                 <p className='card__txt'>{title}</p>
-            </Link>
-        </li>
-
+            </div>
+        </div>
     )
 }
 

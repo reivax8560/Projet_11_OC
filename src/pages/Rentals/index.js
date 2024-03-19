@@ -42,16 +42,16 @@ function Rentals() {
                 {/* ///////////////////// BLOC TAGS / RATING ///////////////////////*/}
                 <div className='tags-container'>
                     <div className='tags-container__tags'>
-                        {currentRental.tags.map((tag) =>
-                            <p key={tag} className='tags-container__tag'>{tag}</p>
+                        {currentRental.tags.map((tag, index) =>
+                            <p key={index} className='tags-container__tag'>{tag}</p>
                         )}
                     </div>
                     <div className='tags-container__rating'>
-                        {starsArray.map((element) =>
+                        {starsArray.map((element, index) =>
                             element === 'pink star' ?
-                                <FontAwesomeIcon icon={faStar} className='tags-container__rating--pink-star' />
+                                <FontAwesomeIcon icon={faStar} key={index} className='tags-container__rating--pink-star' />
                                 :
-                                <FontAwesomeIcon icon={faStar} className='tags-container__rating--grey-star' />
+                                <FontAwesomeIcon icon={faStar} key={index} className='tags-container__rating--grey-star' />
                         )}
                     </div>
                 </div>

@@ -16,9 +16,9 @@ function Home() {
                 <div className='gallery'>
                     <ul className='gallery__ul'>
                         {datas.map(({ id, cover, title }) =>
-                            <div key={id} className='div-card'>
+                            <li key={id} className='div-card'>
                                 <RentalCard id={id} cover={cover} title={title} />
-                            </div>
+                            </li>
                         )}
                     </ul>
                 </div>
