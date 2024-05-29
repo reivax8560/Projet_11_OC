@@ -1,4 +1,5 @@
 import { Outlet, createBrowserRouter } from 'react-router-dom';
+import { ScrollRestoration } from 'react-router-dom';
 import Home from './pages/Home'
 import About from './pages/About';
 import Rentals from './pages/Rentals';
@@ -31,5 +32,9 @@ export const router = createBrowserRouter([
 ]);
 
 function Root() {
-    return <Outlet />
+    return <>
+        <Outlet />
+        <ScrollRestoration />
+    </>
+
 }

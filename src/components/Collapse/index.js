@@ -9,6 +9,7 @@ function Collapse({ title, className, children }) {
     const [chevronClass, setChevronClass] = useState('chevron')
     const [contentClass, setContentClass] = useState('wrapper')
 
+    // GESTION DES CLASSES POUR ANIMATION CSS
     const toggle = () => {
         if (contentState === 'close') {
             setContentState('open')
@@ -23,10 +24,12 @@ function Collapse({ title, className, children }) {
 
     return (
         <div className={className}>
+            {/* TITRE */}
             <div className='titleBox' onClick={toggle} >
                 <p className='titleBox__title'>{title}</p>
                 <FontAwesomeIcon icon={faChevronUp} className={chevronClass} />
             </div>
+            {/* CONTENU */}
             <div className={contentClass}>
                 <div>
                     <div className="content">

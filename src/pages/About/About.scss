@@ -4,14 +4,29 @@ p {
 
 .about {
     font-family: Montserrat;
-    font-size: 26px;
 }
 
 .about-main-wrapper {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    // gap: 50px;
     padding: 45px;
     align-items: center;
+    font-size: 26px;
+
+    @media screen and (max-width: 570px) {
+        padding: 5%;
+    }
+}
+
+.header {
+    @media screen and (max-width: 570px) {
+        margin-bottom: 5px;
+    }
+}
+
+.bannerBg {
+    @media screen and (max-width: 570px) {
+        margin-bottom: 5px;
+    }
 }

@@ -5,16 +5,27 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 570px) {
+        margin-bottom: 20px;
+        height: auto;
+    }
 
     &__logo {
         width: 210px;
         height: 100%;
+
+        @media screen and (max-width: 570px) {
+            width: 45%;
+        }
     }
 
     &__navbar {
         display: flex;
         align-items: center;
         list-style: none;
+        padding-inline-start: 0;
     }
 
     &__link {
@@ -27,6 +38,13 @@
         margin-left: 50px;
         cursor: pointer;
         text-decoration: none;
+
+        @media screen and (max-width: 570px) {
+            margin-left: 20px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
     }
 
     nav a.active {

@@ -1,3 +1,4 @@
+// import { useNavigate } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import './Header.scss'
 import logo from './../../assets/logo.svg'
@@ -24,5 +25,4 @@ function Header() {
         </div>
     )
 }
-
 export default Header
